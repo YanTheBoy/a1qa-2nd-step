@@ -1,0 +1,8 @@
+{
+    "alert": "I am a JS Alert",
+    "alert_result": "You successfuly clicked an alert",
+    "confirm": "I am a JS Confirm",
+    "confirm_result": "You clicked: Ok",
+    "prompt": "I am a JS prompt",
+    "prompt_result": "You entered: "
+}
