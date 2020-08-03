@@ -1,12 +1,14 @@
 from singleton_browser import get_chrome, get_firefox
 from logger import appLogger
 
+BROWSWER_CHROME = 'Chrome'
+BROWSER_FIREFOX = 'Firefox'
 
 class Browser:
     def factory(browser_name: str):
-        if browser_name.lower() == "chrome":
+        if browser_name.lower() == BROWSWER_CHROME.lower():
             return Chrome().browser()
-        if browser_name.lower() == "firefox":
+        if browser_name.lower() == BROWSER_FIREFOX.lower():
             return Firefox().browser()
 
     factory = staticmethod(factory)
