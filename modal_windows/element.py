@@ -17,12 +17,9 @@ class BaseElement(ABC):
                                                     message=f"Can't find element by locator {self.locator}")
 
 
-
 class Button(BaseElement):
     def __init__(self, locator, driver):
         super().__init__(locator, driver)
 
     def click(self):
         self.find_element().click()
-
-

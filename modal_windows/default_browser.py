@@ -1,8 +1,3 @@
-import time
-from logger import appLogger
-
-
-
 class BaseEntity:
     def __init__(self, driver):
         self.driver = driver

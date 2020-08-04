@@ -4,6 +4,7 @@ from logger import appLogger
 BROWSER_CHROME = 'Chrome'
 BROWSER_FIREFOX = 'Firefox'
 
+
 class Browser:
     def factory(browser_name: str):
         if browser_name.lower() == BROWSER_CHROME.lower():

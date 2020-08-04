@@ -27,8 +27,6 @@ class JsAlertsMainPage(BasePage):
     def get_alert_text(self):
         return self.get_alert_msg()
 
-
-
     def accept_alert_window(self):
         self.accept_alert()
 
@@ -40,4 +38,3 @@ class JsAlertsMainPage(BasePage):
 
     def get_results(self):
         return self.find_element(JsAlertsLocators.JS_RESULT).text
-
