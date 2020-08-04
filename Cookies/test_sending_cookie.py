@@ -32,7 +32,7 @@ def test_sending_cookie(browser):
     example_page.add_cookies(
         {test_data['update_cookie']: test_data['new_value']})
     appLogger.debug('Assert cookie was updated')
-    assert (example_page.get_cookie(test_data['update_cookie']))['value'] == test_data['new_value']
+    assert (example_page.get_cookie(test_data['update_cookie']))['value'] == test_data['new_value'], 'Cookie was not updated'
 
     appLogger.debug('Delete all cookies')
     example_page.delete_cookies()
