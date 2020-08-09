@@ -1,0 +1,24 @@
+{
+  "test_case_1": {
+      "minsk": "Минск",
+      "istanbul": "Стамбул"
+  },
+  "test_case_2": {
+    "minsk": "Минск",
+    "istanbul": "Стамбул",
+    "tunis": "Тунис, Тунис"
+  },
+    "test_case_3": {
+      "minsk": "Минск",
+      "istanbul": "Стамбул"
+  },
+  "but_btn": "Купить",
+  "more_prices": "Цены на соседние даты",
+  "departure_btn": "Туда",
+  "return_ticket": "Обратный билет не нужен",
+  "lowest_price": "Самый дешевый",
+  "straight_flight": "Прямой",
+  "luggage": "Багаж и ручная кладь",
+  "with_luggage": "С багажом"
+
+}
