@@ -7,10 +7,10 @@ $ pip install -r requirements.txt
 ```
 Browser name (Chrome/Firefox), url should be in config.json
 ___
-Run pytest test_iframe for testing module:
+Run pytest test_tc1 for testing module:
 ```bash
-$ pytest test_iframe.py
+$ pytest test_tc1.py
 ============================= test session starts ==============================
-test_iframe.py .                                                    [100%]
+test_tc1.py .                                                    [100%]
 ============================== 1 passed in 34.74s ==============================
 ```
