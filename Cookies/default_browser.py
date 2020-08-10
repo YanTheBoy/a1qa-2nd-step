@@ -19,7 +19,7 @@ class BaseEntity:
 
     def add_cookies(self, cookies):
         for name, value in cookies.items():
-            return self.driver.add_cookie({
+            self.driver.add_cookie({
                 'name': name,
                 'value': value
             })

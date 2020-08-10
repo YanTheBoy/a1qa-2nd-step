@@ -17,8 +17,7 @@ def test_sending_cookie(browser):
     assert example_page.get_h1_text() in asserts_data['header'], 'Incorrect site was opened.'
 
     appLogger.debug('Add all cookies')
-    for name, value in test_data['cookies'].items():
-        example_page.add_cookies({name: value})
+    example_page.add_cookies(test_data['cookies'])
     appLogger.debug('Assert cookies was successfully added')
     for name, _ in test_data['cookies'].items():
         assert example_page.get_cookie(name) is not None, 'Cookie was not add to site'
