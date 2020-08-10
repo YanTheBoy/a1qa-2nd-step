@@ -1,0 +1,10 @@
+{
+  "cookies": {
+    "example_key_1":"example_value_1",
+    "example_key_2":"example_value_2",
+    "example_key_3":"example_value_3"
+  },
+  "del_cookie": "example_key_1",
+  "update_cookie": "example_key_3",
+  "new_value": "example_value_300"
+}
