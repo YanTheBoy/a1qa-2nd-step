@@ -3,10 +3,14 @@ from selenium.webdriver.common.by import By
 from element import Button, IFrame
 from assistance import generate_string
 from selenium.webdriver.common.keys import Keys
+from assistance import get_asserts_data
+
+
+asserts_data = get_asserts_data()
 
 
 class IframePageLocators:
-    IFRAME_HIGHLIGHT = (By.XPATH, '//*[@id="content"]/div/h3')
+    IFRAME_HIGHLIGHT = (By.XPATH, f'//*[contains(text(), "{asserts_data["iframe_highlight"]}")]')
     IFRAME = (By.XPATH, '//*[@id="mce_0_ifr"]')
     IFRAME_FIELD = (By.XPATH, '//*[@id="tinymce"]')
     STRONG_TEXT = (By.XPATH, '//*[@id="tinymce"]/p/strong')
