@@ -4,13 +4,13 @@ from random import choice
 
 
 def get_config_data():
-    with open("config.json", encoding='utf-8') as config_data:
+    with open("D:/Projects/a1qa-2nd-step/rest_api/config.json", encoding='utf-8') as config_data:
         data = json.load(config_data)
     return data
 
 
 def get_test_data():
-    with open("test_data.json", encoding='utf-8') as config_data:
+    with open("D:/Projects/a1qa-2nd-step/rest_api/test_data.json", encoding='utf-8') as config_data:
         data = json.load(config_data)
     return data
 

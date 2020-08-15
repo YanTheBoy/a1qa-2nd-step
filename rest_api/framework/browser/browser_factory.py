@@ -1,5 +1,5 @@
-from singleton_browser import get_chrome, get_firefox
-from logger import appLogger
+from .singleton_browser import get_chrome, get_firefox
+from framework.logger import appLogger
 
 BROWSER_CHROME = 'Chrome'
 BROWSER_FIREFOX = 'Firefox'

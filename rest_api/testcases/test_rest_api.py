@@ -1,6 +1,6 @@
-from logger import appLogger
-from APIutils import send_get_request, get_status_code, send_post_request
-from assistance import get_config_data, get_test_data, generate_string, sort_list_by_user_id
+from framework.logger import appLogger
+from framework.utils.APIutils import send_get_request, get_status_code, send_post_request
+from framework.utils.assistance import get_config_data, get_test_data, generate_string, sort_list_by_user_id
 
 test_data = get_test_data()
 config_data = get_config_data()
@@ -66,3 +66,4 @@ def test_rest_api():
     assert user_data, 'response is not in JSON'
     appLogger.debug('Assert collected data for user 5')
     assert user_data == test_data['user_5'], 'Users data are not equal'
+

@@ -1,7 +1,8 @@
 import pytest
-from browser_factory import Browser
-from logger import appLogger
-from assistance import get_config_data
+from framework.browser.browser_factory import Browser
+from framework.logger import appLogger
+from framework.utils.assistance import get_config_data
+
 
 config_data = get_config_data()
 
