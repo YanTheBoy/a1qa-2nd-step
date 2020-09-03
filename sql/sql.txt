@@ -1,0 +1,21 @@
+select pj.name 'PROJECT', t.name 'TEST', t.end_time-t.start_time 'MIN_WORKING_TIME'
+from project pj
+join test t on pj.id = t.project_id
+order by pj.name, t.name ASC;
+
+select pj.name 'PROJECT', count(t.name) 'TESTS_COUNT'
+from project pj
+join test t on pj.id = t.project_id
+group by pj.id;
+
+select pj.name 'PROJECT', t.name 'TEST', t.start_time 'DATE'
+from project pj
+join test t on pj.id = t.project_id
+where t.start_time > '20151108'
+order by pj.name, t.name;
+
+select count(*) 'BROWSERS' from test t
+where t.browser = 'chrome'
+union
+select count(*) from test t
+where t.browser = 'firefox';
