@@ -1,8 +1,8 @@
 {
     "user_id": 2179,
-    "test_id": 55776194,
+    "test_basic_auth_page": 55776194,
     "url": "https://tr.a1qa.com/",
     "login": "i.arhipov@qa-academy.by",
-    "pass": "-----",
+    "pass": "------",
     "pic": "test_result.png"
 }

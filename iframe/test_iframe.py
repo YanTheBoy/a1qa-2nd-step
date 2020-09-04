@@ -32,4 +32,3 @@ def test_basic_auth_page(browser):
     iframe_page.switch_to_iframe()
     appLogger.debug('Assert text made bold')
     assert iframe_page.find_strong_element(), 'Entered string is not bold'
-
