@@ -62,10 +62,17 @@ def pytest_sessionfinish(session):
     send_results_to_testrail(status_id, comment)
 
 
+
+
 def send_results_to_testrail(status, comment):
     client = APIClient(TR_URL)
     client.user = TR_LOGIN
     client.password = TR_PASS
+    add_run = client.send_post(f'add_run/140', data = {
+        "name": "test_name",
+        "suite_id": 16821
+    })
+    tests = client.send_get(f'get_tests/{add_run["id"]}')
     add_res = client.send_post(f'add_result/{testrail[TEST_ID]}', data={
         "status_id": status,
         "comment": comment,
